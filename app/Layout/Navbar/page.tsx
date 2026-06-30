@@ -37,7 +37,6 @@ const Navbar = () => {
           mt-10
         ">
         <div className='grid grid-cols-6 items-center w-full'>
-
           <div className='col-start-1 col-end-3'>
             <Image src="/logo.png" alt="Logo" width={50} height={50} className='ml-20' />
           </div>
