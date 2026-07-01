@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "./Layout/Navbar/page";
+import Intro from "./components/Intro/page";
 
 type User = {
   name: string;
@@ -19,29 +20,14 @@ export default function Home() {
   };
 
   return (
-    <div className="">
+    <div className="mt-[120px]">
       <main className="">
-
-        <h1 className="text-4xl font-bold">{name}</h1>
-
-        <p>Age: {age}</p>
-
-        <p>
-          Status: {isDeveloper ? "Frontend Developer" : "Student"}
-        </p>
-
-        <h2 className="text-2xl font-semibold mt-6">Skills</h2>
-
-        <ul>
-          {skills.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-
-        <h2 className="text-2xl font-semibold mt-6">User Information</h2>
-
-        <p>Name: {user.name}</p>
-        <p>Age: {user.age}</p>
+        <Intro
+          highlightedWord="Labiba"
+          Headline="Ifrit Jahin"
+          Subheadline="Hey there! I'm"
+          ActionText="Software Engineer/ Web Developer"
+        />
       </main>
     </div>
   );
