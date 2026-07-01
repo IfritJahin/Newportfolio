@@ -15,7 +15,6 @@ const Intro = ({ highlightedWord, Headline, Subheadline, ActionText }: IntroProp
 
     {/* Left Column */}
     <div className="flex flex-col justify-center text-center lg:text-left w-full max-w-[545px] mx-auto lg:mx-0">
-
       <h4 className="font-normal text-[24px] sm:text-[32px] lg:text-[40px] mb-2">
         {Subheadline}
       </h4>
