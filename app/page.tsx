@@ -1,6 +1,6 @@
+import Intro from "@/components/Intro/Intro";
 import Image from "next/image";
-import Navbar from "./Layout/Navbar/page";
-import Intro from "./components/Intro/page";
+
 
 type User = {
   name: string;
