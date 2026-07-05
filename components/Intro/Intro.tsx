@@ -10,21 +10,21 @@ type IntroProps = {
 
 const Intro = ({ highlightedWord, Headline, Subheadline, ActionText }: IntroProps) => {
   return (
-<section className="container mx-auto min-h-screen px-6 py-10">
+<section className="container mx-auto px-6 py-10 mb-20">
   <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
 
     {/* Left Column */}
-    <div className="flex flex-col justify-center text-center lg:text-left w-full max-w-[545px] mx-auto lg:mx-0">
-      <h4 className="font-normal text-[24px] sm:text-[32px] lg:text-[40px] mb-2">
+    <div className="flex flex-col justify-center text-center lg:text-left w-full max-w-[545px] mx-auto lg:mx-[90px] xl:mx-[60px] 2xl:mx-0">
+      <h4 className="font-normal text-[24px] sm:text-[32px] lg:text-[35px] 2xl:text-[40px] mb-2">
         {Subheadline}
       </h4>
 
-      <h1 className="font-medium text-[38px] sm:text-[52px] lg:text-[64px] leading-tight mb-4">
+      <h1 className="font-medium text-[38px] sm:text-[52px] lg:text-[56px] 2xl:text-[64px] leading-tight mb-4">
         <span className="text-[#873481]">{highlightedWord}</span>{" "}
         {Headline}
       </h1>
 
-      <p className="font-normal text-[18px] sm:text-[20px] lg:text-[24px] text-[#C566BF]">
+      <p className="font-normal text-[18px] sm:text-[20px] lg:text-[20px] 2xl:text-[24px] text-[#C566BF]">
         {ActionText}
       </p>
 
@@ -61,7 +61,7 @@ const Intro = ({ highlightedWord, Headline, Subheadline, ActionText }: IntroProp
         alt="Profile Picture"
         width={566}
         height={566}
-        className="w-[260px] sm:w-[340px] md:w-[420px] lg:w-[566px] h-auto"
+        className="w-[260px] sm:w-[340px] md:w-[420px] lg:w-[566px] h-auto 2xl:mr-[-300px] xl:mr-[-200px] lg:mr-[25px] md:mr-0"
       />
     </div>
 

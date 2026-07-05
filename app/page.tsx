@@ -1,3 +1,7 @@
+
+
+import About from "@/components/About/About";
+import AboutUs from "@/components/About/AboutUs";
 import Intro from "@/components/Intro/Intro";
 import Image from "next/image";
 
@@ -20,7 +24,7 @@ export default function Home() {
   };
 
   return (
-    <div className="mt-[120px]">
+    <div className="mt-10 2xl:mt-[164px] overflow-hidden">
       <main className="">
         <Intro
           highlightedWord="Labiba"
@@ -28,6 +32,28 @@ export default function Home() {
           Subheadline="Hey there! I'm"
           ActionText="Software Engineer/ Web Developer"
         />
+        <About
+          item={[
+            {
+              count: 2,
+              suffix: " Y",
+              actionText: "Experiences",
+              subheadline: "",
+            },
+            {
+              subheadline: "B.Sc.",
+              actionText: "Computer Science & Engineering",
+            },
+            {
+              count: 10,
+              suffix: "+",
+              actionText: "Projects",
+              subheadline: "",
+            },
+          ]}
+        />
+        <AboutUs headline="About Me" explanation="Junior Software Engineer with experience in full-stack web development using React, Next.js, and Laravel. Strong in building responsive UI, API integration, and performance optimization. Seeking opportunities to contribute to scalable and modern web applications." item={[]} />  
+        
       </main>
     </div>
   );
