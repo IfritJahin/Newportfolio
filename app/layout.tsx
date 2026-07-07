@@ -12,10 +12,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",

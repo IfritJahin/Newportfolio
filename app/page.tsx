@@ -24,7 +24,7 @@ export default function Home() {
   };
 
   return (
-    <div className="mt-10 2xl:mt-[164px] overflow-hidden">
+    <div className="mt-[100px] 2xl:mt-[164px] overflow-hidden">
       <main className="">
         <Intro
           highlightedWord="Labiba"
@@ -32,6 +32,8 @@ export default function Home() {
           Subheadline="Hey there! I'm"
           ActionText="Software Engineer/ Web Developer"
         />
+        <section id="about">
+
         <About
           item={[
             {
@@ -52,7 +54,15 @@ export default function Home() {
             },
           ]}
         />
-        <AboutUs headline="About Me" explanation="Junior Software Engineer with experience in full-stack web development using React, Next.js, and Laravel. Strong in building responsive UI, API integration, and performance optimization. Seeking opportunities to contribute to scalable and modern web applications." item={[]} />  
+        <AboutUs 
+          headline="About Me"
+          explanation="Junior Software Engineer with experience in full-stack web development using React, Next.js, and Laravel. Strong in building responsive UI, API integration, and performance optimization. Seeking opportunities to contribute to scalable and modern web applications."
+          item={[ 
+            { subheadline: "Design", para: "I can design the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.", image: "/ContentQuillPen.png" } , 
+            { subheadline: "Education", para: "I can develop the site based on your needs and suggestions. I can also design the site from scratch and consult you during the job.", image: "/FileJava.png" }
+           ]} 
+         />  
+        </section>
         
       </main>
     </div>

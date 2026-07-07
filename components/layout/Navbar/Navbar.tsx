@@ -13,33 +13,35 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const items: NavProps[] = [
-    { name: 'Skills', href: '/' },
-    { name: 'About Me', href: '/about' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'About Me', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
     <>
       {/* ================= Desktop Navbar ================= */}
-      <nav
-        className="
-        navbar
+        <nav
+          className="
           hidden md:flex
-          bg-zinc-100
+          fixed
+          top-5
+          left-1/2
+          -translate-x-1/2
+          z-50
           rounded-full
           shadow-md
           h-[70px]
-          mt-10
           px-8
           w-[95%]
           md:max-w-[900px]
           lg:max-w-[1100px]
           xl:max-w-[1384px]
           2xl:max-w-[1775px]
-          mx-auto
-        "
-      >
+          navbar
+          "
+          >
         <div className="flex items-center justify-between w-full md:ml-10 xl:ml-20 2xl:ml-20">
           {/* Logo */}
           <Link href="/">
@@ -71,11 +73,13 @@ const Navbar = () => {
         className={`
           navbar
           md:hidden
-          bg-zinc-100
+          fixed
+          top-5
+          left-1/2
+          -translate-x-1/2
+          z-50
           shadow-md
           w-[90%]
-          mx-auto
-          mt-10
           px-5
           ${open ? 'rounded-3xl py-5' : 'rounded-full py-4'}
         `}
