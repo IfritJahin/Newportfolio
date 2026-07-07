@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <>
       {/* ================= Desktop Navbar ================= */}
-        <nav
+        {/* <nav
           className="
           hidden md:flex
           fixed
@@ -41,6 +41,24 @@ const Navbar = () => {
           2xl:max-w-[1775px]
           navbar
           "
+          > */}
+      <nav
+        className="
+          navbar
+          hidden 
+          md:flex
+          rounded-full
+          shadow-md
+          h-[70px]
+          mt-5
+          px-8
+          w-[95%]
+          md:max-w-[900px]
+          lg:max-w-[1100px]
+          xl:max-w-[1384px]
+          2xl:max-w-[1775px]
+          mx-auto
+        "
           >
         <div className="flex items-center justify-between w-full md:ml-10 xl:ml-20 2xl:ml-20">
           {/* Logo */}
@@ -73,11 +91,8 @@ const Navbar = () => {
         className={`
           navbar
           md:hidden
-          fixed
-          top-5
-          left-1/2
-          -translate-x-1/2
-          z-50
+          mx-auto
+          mt-5
           shadow-md
           w-[90%]
           px-5
