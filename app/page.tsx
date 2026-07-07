@@ -24,7 +24,7 @@ export default function Home() {
   };
 
   return (
-    <div className="mt-[100px] 2xl:mt-[164px] overflow-hidden">
+    <div className="mt-10 2xl:mt-[164px] overflow-hidden">
       <main className="">
         <Intro
           highlightedWord="Labiba"
