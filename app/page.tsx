@@ -51,8 +51,7 @@ export default function Home() {
            />  
         </div>
         <div id="skills">
-          <Skills
-           headline="SKILLS" />
+          <Skills/>
         </div>
         
       </main>
