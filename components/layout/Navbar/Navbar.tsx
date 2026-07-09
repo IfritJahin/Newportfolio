@@ -1,5 +1,5 @@
-'use client';
-
+'use client'
+import { motion } from "framer-motion";
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
@@ -42,7 +42,10 @@ const Navbar = () => {
           navbar
           "
           > */}
-      <nav
+      <motion.nav
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
         className="
           navbar
           hidden 
@@ -84,7 +87,7 @@ const Navbar = () => {
             ))}
           </div>
         </div>
-      </nav>
+      </motion.nav>
 
       {/* ================= Mobile Navbar ================= */}
       <nav
