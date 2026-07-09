@@ -38,21 +38,21 @@ const Intro = ({ highlightedWord, Headline, Subheadline, ActionText }: IntroProp
           {/* Social Icons */}
           <div className="flex justify-center lg:justify-start gap-4 mt-8">
             <a
-              href="#"
+              href="mailto:labibaifritjahin0325@gmail.com" target="_blank"
               className="group w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-md flex items-center justify-center transition-all duration-300 hover:bg-[#873481]"
             >
               <RiMailUnreadFill className="text-[24px] sm:text-[28px] text-[#873481] group-hover:text-white" />
             </a>
 
             <a
-              href="#"
+              href="https://github.com/IfritJahin" target="_blank"
               className="group w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-md flex items-center justify-center transition-all duration-300 hover:bg-[#873481]"
             >
               <FaGithub className="text-[24px] sm:text-[28px] text-[#873481] group-hover:text-white" />
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/-labiba/" target="_blank"
               className="group w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-md flex items-center justify-center transition-all duration-300 hover:bg-[#873481]"
             >
               <FaLinkedinIn className="text-[24px] sm:text-[28px] text-[#873481] group-hover:text-white" />
