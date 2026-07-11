@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Experiences from "./Experiences";
 
 type SkillGroup = {
   categories: {
@@ -11,13 +12,13 @@ type SkillGroup = {
   }[];
 };
 
-type ExperienceItem = {
+export type ExperienceItem = {
   role: string;
   company: string;
   duration: string;
   description: string;
+  logo?: string;
 };
-
 type SkillsExperienceProps = {
   skillsHeadline: string;
   experienceHeadline: string;
@@ -195,6 +196,7 @@ const SkillsExperience = ({
       duration: "2024 — 2025",
       description:
         "Built responsive UI with React and Next.js, integrated REST APIs, and optimized performance across the stack.",
+      logo: "/adn.svg"
     },
     {
       role: "Intern & Trainee",
@@ -202,6 +204,8 @@ const SkillsExperience = ({
       duration: "2024",
       description:
         "Assisted in developing full-stack features using Laravel and React, collaborating with the design team on UI improvements.",
+      logo: "/adn.svg"
+
     },
     {
       role: "Intern",
@@ -209,6 +213,7 @@ const SkillsExperience = ({
       duration: "2023",
       description:
         "Assisted in developing full-stack features using React, collaborating with the design team on UI improvements.",
+        logo: "/codetree.png"
     },
   ],
 }: Partial<SkillsExperienceProps>) => {
@@ -318,72 +323,10 @@ const SkillsExperience = ({
           ))}
         </motion.div>
       </div>
-
-      {/* ---------------- EXPERIENCE ---------------- */}
-
-      <div className="flex justify-end mt-24 mb-8 select-none pointer-events-none">
-        <h4 className="
-          text-[64px]
-          sm:text-[96px]
-          lg:text-[128px]
-          font-medium
-          text-[#873481]/20
-          tracking-[0.2em]
-          leading-none
-          text-right
-        ">
-          {experienceHeadline}
-        </h4>
-      </div>
-
-      <div className="flex items-center gap-3 mb-8 max-w-3xl">
-        <span className="font-mono text-[12px] tracking-[0.15em] text-[#8A6BA8]">
-          // 03 — experience
-        </span>
-        <span className="h-px flex-1 bg-[#6B2B5C]/15" />
-      </div>
-
-      <div className="max-w-3xl relative">
-        {/* vertical line */}
-        <span className="absolute left-[7px] top-2 bottom-2 w-px bg-[#6B2B5C]/15" />
-
-        {experience.map((job, index) => (
-          <motion.div
-            key={`${job.company}-${index}`}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            viewport={{ once: false }}
-            className="relative pl-8 pb-10 last:pb-0"
-          >
-            {/* dot */}
-            <span className="
-              absolute left-0 top-1.5
-              w-[15px] h-[15px]
-              rounded-full
-              bg-white
-              border-2 border-[#B0489C]
-            " />
-
-            <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-2">
-              <h5 className="text-[20px] font-semibold text-[#241C2E]">
-                {job.role}
-              </h5>
-              <span className="font-mono text-[12px] text-[#8A6BA8]">
-                @ {job.company}
-              </span>
-            </div>
-
-            <span className="font-mono text-[11px] text-[#8A6BA8]/70 block mb-3">
-              {job.duration}
-            </span>
-
-            <p className="text-[15px] leading-7 text-[#241C2E]/75">
-              {job.description}
-            </p>
-          </motion.div>
-        ))}
-      </div>
+<Experiences
+experienceHeadline={experienceHeadline}
+experience={experience}
+/>
     </div>
   );
 };

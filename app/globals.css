@@ -71,3 +71,10 @@ body {
 .blink {
   animation: blink-caret 1.1s step-end infinite;
 }
+.workspace-swiper .swiper-pagination-bullet {
+  background: #B0489C;
+  opacity: 0.4;
+}
+.workspace-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
