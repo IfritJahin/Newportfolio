@@ -12,12 +12,9 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Autoplay, Pagination } from 'swiper/modules';
-import type { ExperienceItem } from "./Skills";
+// import type { ExperienceItem } from "./Skills";
 
-type ExperiencesProps = {
-  experienceHeadline?: string;
-  experience?: ExperienceItem[];
-};
+
 const WORKSPACE_IMAGES = [
   "/Work2.jfif",
   "/Work.jfif",
@@ -27,13 +24,49 @@ const WORKSPACE_IMAGES = [
   // "https://picsum.photos/seed/workspace4/500/650",
   // "https://picsum.photos/seed/workspace5/500/650",
 ];
-
+ type ExperienceItem = {
+    role: string;
+    company: string;
+    duration: string;
+    description: string;
+    logo?: string;
+  };
+  type ExperiencesProps = {
+    experienceHeadline?: string;
+    experience?: ExperienceItem[];
+  };
 const Experiences = ({
-    experienceHeadline = "EXPERIENCE",
-    experience = [],
+    experienceHeadline = "EXPERIENCES",
+    experience = [
+        {
+          role: "Junior Software Engineer",
+          company: "ADN Diginet",
+          duration: "2024 — 2025",
+          description:
+            "Built responsive UI with React and Next.js, integrated REST APIs, and optimized performance across the stack.",
+          logo: "/adn.svg"
+        },
+        {
+          role: "Intern & Trainee",
+          company: "ADN Diginet",
+          duration: "2024",
+          description:
+            "Assisted in developing full-stack features using Laravel and React, collaborating with the design team on UI improvements.",
+          logo: "/adn.svg"
+    
+        },
+        {
+          role: "Intern",
+          company: "Codetree",
+          duration: "2023",
+          description:
+            "Assisted in developing full-stack features using React, collaborating with the design team on UI improvements.",
+            logo: "/codetree.png"
+        },
+      ],
   }: ExperiencesProps) => {
   return (
-    <>
+    <div className="container mx-auto px-4 sm:px-6 py-10 overflow-hidden">
           {/* ---------------- EXPERIENCE ---------------- */}
 
         <div className="flex justify-end mt-24 mb-8 select-none pointer-events-none">
@@ -86,7 +119,7 @@ const Experiences = ({
                 {/* Title Row */}
                 <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-3 mb-2">
                   <div className="flex-1 min-w-[200px] flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                    <h5 className="text-[20px] font-semibold text-[#241C2E]">
+                    <h5 className="text-[20px] font-semibold text-[#532350]">
                       {job.role}
                     </h5>
 
@@ -172,7 +205,7 @@ const Experiences = ({
             </p>
           </motion.div>
         </div>
-    </>
+    </div>
 )
 }
 

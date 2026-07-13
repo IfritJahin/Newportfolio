@@ -101,7 +101,7 @@ const AboutUs = ({ headline, explanation, item }: AboutItem) => {
             <div className="flex items-center justify-between mb-6">
               <span className="font-mono text-[12px] tracking-wide text-[#8A6BA8]">
                 function{" "}
-                <span className="text-[#241C2E]">
+                <span className="text-[#532350]">
                   {card.subheadline.replace(/\s/g, "")}()
                 </span>
               </span>
@@ -130,7 +130,7 @@ const AboutUs = ({ headline, explanation, item }: AboutItem) => {
                 />
               </div>
 
-              <h5 className="text-[26px] font-semibold text-[#241C2E] tracking-tight">
+              <h5 className="text-[26px] font-semibold text-[#532350] tracking-tight">
                 {card.subheadline}
               </h5>
             </div>

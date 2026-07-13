@@ -166,7 +166,7 @@ function FloatingTechIcons() {
 
 const SkillsExperience = ({
   skillsHeadline = "SKILLS",
-  experienceHeadline = "EXPERIENCE",
+  experienceHeadline = "EXPERIENCES",
   skills = [
     {
       categories: [
@@ -189,33 +189,7 @@ const SkillsExperience = ({
       ],
     },
   ],
-  experience = [
-    {
-      role: "Junior Software Engineer",
-      company: "ADN Diginet",
-      duration: "2024 — 2025",
-      description:
-        "Built responsive UI with React and Next.js, integrated REST APIs, and optimized performance across the stack.",
-      logo: "/adn.svg"
-    },
-    {
-      role: "Intern & Trainee",
-      company: "ADN Diginet",
-      duration: "2024",
-      description:
-        "Assisted in developing full-stack features using Laravel and React, collaborating with the design team on UI improvements.",
-      logo: "/adn.svg"
 
-    },
-    {
-      role: "Intern",
-      company: "Codetree",
-      duration: "2023",
-      description:
-        "Assisted in developing full-stack features using React, collaborating with the design team on UI improvements.",
-        logo: "/codetree.png"
-    },
-  ],
 }: Partial<SkillsExperienceProps>) => {
   return (
     <div className="container mx-auto px-4 sm:px-6 py-10 overflow-hidden">
@@ -323,10 +297,7 @@ const SkillsExperience = ({
           ))}
         </motion.div>
       </div>
-<Experiences
-experienceHeadline={experienceHeadline}
-experience={experience}
-/>
+
     </div>
   );
 };
