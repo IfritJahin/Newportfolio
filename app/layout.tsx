@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import Navbar from "@/components/layout/Navbar/Navbar";
+import Footer from "@/components/layout/Navbar/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
       <div className="min-h-screen flex flex-col bg-[linear-gradient(180deg,#FFE3E3_0%,#D3CCE9_100%)]">
         <Navbar />
         {children}
+        <Footer/>
       </div>
     </body>
     </html>

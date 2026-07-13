@@ -3,6 +3,8 @@
 import About from "@/components/About/About";
 import AboutUs from "@/components/About/AboutUs";
 import Intro from "@/components/Intro/Intro";
+import Projects from "@/components/Portfolio/Projects";
+import Experiences from "@/components/Skills/Experiences";
 import Skills from "@/components/Skills/Skills"
 import Image from "next/image";
 
@@ -19,7 +21,7 @@ export default function Home() {
           Subheadline="Hey there! I'm"
           ActionText="Software Engineer/ Web Developer"
         />
-        <div id="about" className="mb-20 lg:mb-[200px]">
+        <div id="about" className="mb-10 lg:mb-[150px]">
 
           <About
             item={[
@@ -50,10 +52,15 @@ export default function Home() {
              ]} 
            />  
         </div>
-        <div id="skills">
+        <div id="skills" className="mb-10 lg:mb-[130px]">
           <Skills/>
         </div>
-        
+        <div id="experience" className="mb-10 lg:mb-[150px]">
+          <Experiences/>
+        </div>
+        <div id="portfolio" className="mb-10 lg:mb-[150px]">
+          <Projects/>
+        </div>
       </main>
     </div>
   );

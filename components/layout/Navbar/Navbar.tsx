@@ -15,6 +15,7 @@ const Navbar = () => {
   const items: NavProps[] = [
     { name: 'About Me', href: '#about' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Experiences', href: '#experience' },
     { name: 'Portfolio', href: '#portfolio' },
     { name: 'Contact', href: '#contact' },
   ];
